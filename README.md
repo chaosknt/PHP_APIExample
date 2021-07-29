@@ -5,13 +5,13 @@ API Example ready to implement
 
 ### Index file
 
-#### Table on line 9
+1.- #### Table on line 9
 
-#### POST Method starting on line 25
+2.- #### POST Method starting on line 25
 
-#### PUT Method starting on line 38
+3.- #### PUT Method starting on line 38
 
 
 ### DB file
 
-configure database settings starting at line 4
+1.- ### Configure database settings starting at line 4
