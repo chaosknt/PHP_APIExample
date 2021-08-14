@@ -9,8 +9,10 @@ $badRequest = "HTTP/1.1 400 Bad Request";
 $table = "frameworks";
 
 if($_SERVER['REQUEST_METHOD']=='GET'){
-    if(isset($_GET['id'])){
-        $query="select * from $table where id=".$_GET['id'];
+    if(isset($_GET['nombreColumna'])){
+        $columna = $_GET['nombreColumna'];
+        $valor = $_GET['valorBuscado'];
+        $query="select * from $table where $columna=$valor";
         $result=getMethod($query);
         echo json_encode($result->fetch(PDO::FETCH_ASSOC));
     }else{
